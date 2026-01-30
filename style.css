@@ -1,0 +1,122 @@
+/* FONT E BODY */
+body {
+  margin:0;
+  font-family:'Orbitron',sans-serif;
+  background:white;
+  color:#111;
+}
+
+/* NAVBAR */
+.navbar {
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#000;
+  border-bottom:3px solid #ff7a00;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  z-index:1000;
+}
+
+.logo {
+  font-weight:900;
+  color:#ff7a00;
+  font-size:22px;
+}
+
+.navbar a {
+  color:#ff7a00;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.2s;
+}
+
+.navbar a:hover {
+  color:white;
+}
+
+/* HOME */
+.home {
+  position:relative;
+  height:80vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.central-title {
+  font-size:60px;
+  font-weight:900;
+}
+
+.news-box {
+  position:absolute;
+  width:200px;
+  padding:15px;
+  background:#f7f7f7;
+  border:2px solid #ff7a00;
+  border-radius:12px;
+}
+
+.news-box.left {
+  left:50px;
+}
+
+.news-box.right {
+  right:50px;
+}
+
+/* SECTION BASE */
+.section {
+  padding:100px 20px;
+  text-align:center;
+}
+
+.dark {
+  background:#111;
+  color:white;
+}
+
+/* GRID CARD PILOTI / TEAM */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:15px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.card {
+  background:#1a1a1a;
+  color:white;
+  padding:20px;
+  border-radius:12px;
+  border:2px solid transparent;
+  transition:.2s;
+  font-weight:bold;
+}
+
+.card:hover {
+  border-color:#ff7a00;
+  transform:translateY(-5px);
+}
+
+.card span {
+  display:block;
+  margin-top:5px;
+}
+
+.card small {
+  color:#ff7a00;
+}
+
+/* FOOTER */
+footer {
+  background:#000;
+  padding:20px;
+  text-align:center;
+  color:#ff7a00;
+}
